@@ -1,0 +1,11 @@
+<form *ngIf="showAddTask" action="/" method="post" (ngSubmit)="onSubmit()">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="desctiption" name="desctiption" [(ngModel)]="description" placeholder="task's description">
+    <label for="desctiption">task's description</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="day" name="day" [(ngModel)]="day" placeholder="Day">
+    <label for="day">Day</label>
+  </div>
+  <input type="submit" class="mt-2 btn btn-primary" value="Add task">
+</form>

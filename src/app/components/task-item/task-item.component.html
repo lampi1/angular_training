@@ -1,0 +1,9 @@
+<div class="card mt-2">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="card-title">{{task.description}}</h5>
+      <fa-icon [ngStyle]="{'color':'red'}" [icon]="faTimes" (click)="onDelete(task)"></fa-icon>
+    </div>
+    <p class="card-text">{{task.day}}</p>
+  </div>
+</div>

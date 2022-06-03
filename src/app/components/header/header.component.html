@@ -1,0 +1,7 @@
+<div class="container mt-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <h2>{{title}}</h2>
+    <app-button color="{{showAddTask ? 'red' : 'green'}}" className="btn-secondary" (btnClick)="toggleAddTask()" text="{{showAddTask ? 'Close' : 'Add'}}"></app-button>
+  </div>
+  <app-tasks></app-tasks>
+</div>
